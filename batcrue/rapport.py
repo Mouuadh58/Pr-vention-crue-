@@ -126,7 +126,10 @@ def _graphe_ligne(le, enjeux, seuil):
                         xytext=(0, 7), ha="center", fontsize=7.5)
     a1.set_ylabel("Cote (m NGF)")
     a1.legend(loc="upper left", fontsize=8, ncol=3)
-    a1.set_ylim(le["z_fond"].min() - 0.5, le["Z_avec"].max() + 0.9)
+    bas_eau = float(le["Z_sans"].min())
+    if np.isfinite(le["z_berge"]).all():
+        bas_eau = min(bas_eau, float(le["z_berge"].min()))
+    a1.set_ylim(max(float(le["z_fond"].min()) - 0.3, bas_eau - 1.2), float(le["Z_avec"].max()) + 0.9)
     a2.plot(xk, le["dZ"] * 100, color="#202020", lw=1.8)
     a2.axhline(seuil * 100, color="#505050", lw=1.1, ls="--")
     a2.set_ylim(bottom=0)
