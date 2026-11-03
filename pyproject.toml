@@ -1,0 +1,9 @@
+[project]
+name = "batcrue"
+version = "1.0.0"
+description = "Étude de l'impact hydraulique d'un batardeau sur les crues (barrages de navigation)"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

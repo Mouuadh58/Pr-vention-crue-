@@ -1,0 +1,223 @@
+{
+  "nom_projet": "Impact hydraulique d'un batardeau de passe – étude type",
+  "nom_barrage": "Barrage type de l'Oise (données d'exemple)",
+  "auteur": "",
+  "commentaire": "Données fictives mais réalistes, à remplacer par les données du barrage (plans VNF, levés bathymétriques, loi hauteur-débit aval, études PPRI).",
+  "largeur_riviere": 66.0,
+  "cote_fond": 20.0,
+  "regulation": true,
+  "rn_amont": 25.0,
+  "forme_piles": "arrondi",
+  "passes": [
+    {
+      "nom": "Passe navigable",
+      "largeur": 20.0,
+      "cote_seuil": 20.0,
+      "obstruction": 1.0
+    },
+    {
+      "nom": "Pertuis 1",
+      "largeur": 20.0,
+      "cote_seuil": 20.0,
+      "obstruction": 0.0
+    },
+    {
+      "nom": "Pertuis 2",
+      "largeur": 20.0,
+      "cote_seuil": 20.0,
+      "obstruction": 0.0
+    }
+  ],
+  "type_batardeau": "Batardeau flottant de passe",
+  "forme_batardeau": "carre",
+  "cote_arase": 26.8,
+  "revanche": 0.3,
+  "longueur_batardeau": 25.0,
+  "cote_fond_enceinte": 20.0,
+  "debut_travaux": "2027-05-01",
+  "fin_travaux": "2027-10-31",
+  "mode_bief": "prismatique",
+  "b_min": 50.0,
+  "m_berge": 2.0,
+  "h_berge": 6.0,
+  "B_maj": 300.0,
+  "K_min": 30.0,
+  "K_maj": 15.0,
+  "pente": 0.0002,
+  "longueur_bief": 12000.0,
+  "pas_calcul": 100.0,
+  "sections_tabulees": [
+    {
+      "x": 0.0,
+      "z_fond": 20.0,
+      "b": 50.0,
+      "m": 2.0,
+      "h_berge": 6.0,
+      "B_maj": 300.0,
+      "K_min": 30.0,
+      "K_maj": 15.0
+    },
+    {
+      "x": 6000.0,
+      "z_fond": 21.2,
+      "b": 48.0,
+      "m": 2.0,
+      "h_berge": 6.0,
+      "B_maj": 350.0,
+      "K_min": 30.0,
+      "K_maj": 15.0
+    },
+    {
+      "x": 12000.0,
+      "z_fond": 22.4,
+      "b": 52.0,
+      "m": 2.0,
+      "h_berge": 6.0,
+      "B_maj": 300.0,
+      "K_min": 30.0,
+      "K_maj": 15.0
+    }
+  ],
+  "enjeux": [
+    {
+      "nom": "Pont routier (exemple)",
+      "x": 1500.0,
+      "cote_dommages": 28.2
+    },
+    {
+      "nom": "Quartier riverain (exemple)",
+      "x": 4000.0,
+      "cote_dommages": 27.9
+    },
+    {
+      "nom": "Pied du barrage amont",
+      "x": 12000.0,
+      "cote_dommages": null
+    }
+  ],
+  "mode_aval": "normale",
+  "rn_aval": 23.0,
+  "decalage_aval": 0.0,
+  "cote_aval_constante": 25.0,
+  "loi_aval": [
+    {
+      "Q": 50.0,
+      "Z": 23.0
+    },
+    {
+      "Q": 150.0,
+      "Z": 23.17
+    },
+    {
+      "Q": 250.0,
+      "Z": 24.27
+    },
+    {
+      "Q": 350.0,
+      "Z": 25.19
+    },
+    {
+      "Q": 450.0,
+      "Z": 25.99
+    },
+    {
+      "Q": 550.0,
+      "Z": 26.5
+    },
+    {
+      "Q": 650.0,
+      "Z": 26.91
+    },
+    {
+      "Q": 800.0,
+      "Z": 27.43
+    }
+  ],
+  "mode_hydro": "gumbel",
+  "gumbel_u": 283.0,
+  "gumbel_beta": 88.0,
+  "quantiles": [
+    {
+      "T": 2,
+      "Q": 315.0
+    },
+    {
+      "T": 5,
+      "Q": 415.0
+    },
+    {
+      "T": 10,
+      "Q": 481.0
+    },
+    {
+      "T": 20,
+      "Q": 544.0
+    },
+    {
+      "T": 50,
+      "Q": 626.0
+    },
+    {
+      "T": 100,
+      "Q": 688.0
+    }
+  ],
+  "module": 100.0,
+  "crues_historiques": [],
+  "T_reference": 100,
+  "T_chantier": 10,
+  "saisonnalite": "uniforme",
+  "poids_mensuels": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "seuil_dz": 0.05,
+  "proba_acceptable": 0.05,
+  "vitesse_admissible": 2.0,
+  "k_vitesse_locale": 1.5,
+  "rho_enrochement": 2650.0,
+  "C_isbash": 0.86,
+  "fond_affouillable": false,
+  "k1_laursen": 0.64,
+  "coefs_personnalises": false,
+  "xi_ref": 0.1,
+  "xi_bat": 0.6,
+  "K_yarnell_ref": 0.9,
+  "K_yarnell_bat": 1.25,
+  "K_A": 1.0,
+  "mu": 0.385,
+  "vitesse_approche_seuil": false,
+  "methodes_actives": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "methode_ligne_eau": "enveloppe",
+  "hydro_mode": "synthetique",
+  "hydro_T": 10,
+  "hydro_t_pic": 96.0,
+  "hydro_duree": 360.0,
+  "hydro_Qb": 100.0,
+  "hydro_csv": null,
+  "lane_applicable": false,
+  "sol_fondation": "Sable moyen",
+  "l_cheminement_v": 12.0,
+  "l_cheminement_h": 2.0,
+  "mc_n": 300,
+  "mc_graine": 1,
+  "incert_strickler": 0.2,
+  "incert_debit": 0.1,
+  "incert_aval": 0.2,
+  "code_station": ""
+}
